@@ -5,7 +5,7 @@ import { trigger, state, style, animate, transition, animation} from '@angular/a
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass'],
+  styleUrls: ['./app.component.css'],
   animations: [
     trigger('openClose', [
       state('open',style({
