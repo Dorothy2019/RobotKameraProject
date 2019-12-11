@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { trigger, state, style, animate, transition, animation} from '@angular/animations';
+import {Router} from "@angular/router";
+
 
 
 @Component({
@@ -27,10 +29,17 @@ import { trigger, state, style, animate, transition, animation} from '@angular/a
 
 })
 export class AppComponent {
+
+  constructor(private router: Router) { }
+
   title = 'robotclient';
   isOpen = true;
 
   toggle(){
     this.isOpen = !this.isOpen;
+  }
+
+  goToTakePhoto(){
+    this.router.navigateByUrl('/photo');
   }
 }
