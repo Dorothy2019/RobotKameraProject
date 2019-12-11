@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PhotoComponent } from './components/photo/photo.component';
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PhotoComponent
+    PhotoComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,
